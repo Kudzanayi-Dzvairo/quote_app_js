@@ -14,8 +14,8 @@ function getData() {
         console.log(quotes)
         let number = Math.floor(Math.random() * quotes.length)
 
-        quote.innerHTML = '<span>"</span>' + quotes[number].quote+'<span>"</span>'
-        author.innerHTML = '<span>---</span>' + quotes[number].quote+'<span>"</span>'
+        quote.innerHTML = '<span>"</span>' + quotes.quoteText+'<span>"</span>'
+        author.innerHTML = '<span>---</span>' + quotes.quoteAuthor+'<span>"</span>'
 
     })
     .catch(error => {
